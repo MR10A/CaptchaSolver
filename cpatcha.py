@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import time
 
-def ReCaptcha(driver):
+def ReCAPTCHA2(driver):
     try:
         # Switch to the first iframe and click the checkbox
         iframe = driver.find_element(By.TAG_NAME, "iframe")
@@ -37,12 +37,13 @@ def ReCaptcha(driver):
     return driver
 
 
-def CSDriver(url):
+def CSDriver(url,CpatchaType):
     options = Options()
-    options.add_extension("buster.crx")
+    options.add_extension("RecCAPTCHA2.crx")
     driver = webdriver.Chrome(options=options)
     driver.get(url)
-    ReCaptcha(driver)
+    if CaptchaType=="ReCAPTCHA2"
+        ReCaptcha(driver)
     return driver
 
 
