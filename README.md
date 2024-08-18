@@ -24,7 +24,7 @@ url = "https://example.com"
 ```
 # Initialize and run CSDriver
 ```
-driver = CSDriver(url)
+driver = CSDriver(url,CaptchaType="ReCAPTCHA2")
 ```
 
  
