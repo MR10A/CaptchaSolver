@@ -51,5 +51,5 @@ def CSDriver(url,CpatchaType):
 
 if __name__ == "__main__":
     CSDriver()
-    ReCaptcha()
+
     
