@@ -39,7 +39,7 @@ def ReCAPTCHA2(driver):
 
 def CSDriver(url,CpatchaType):
     options = Options()
-    options.add_extension("RecCAPTCHA2.crx")
+    options.add_extension("ReCAPTCHA2.crx")
     driver = webdriver.Chrome(options=options)
     driver.get(url)
     if CaptchaType=="ReCAPTCHA2"
